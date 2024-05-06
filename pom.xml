@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.notthebest</groupId>
-	<artifactId>secretsanta</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>SecretSanta</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>secretsanta</name>
 	<description>Secret Santa Matchmaking</description>
 
