@@ -59,6 +59,10 @@
 		</dependency>
 	</dependencies>
 
+<configuration>
+    <mainClass>SecretsantaApplication</mainClass>
+</configuration>
+
 	
            <build>
 		<plugins>
