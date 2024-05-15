@@ -11,17 +11,8 @@
 	<groupId>com.notthebest</groupId>
 	<artifactId>SecretSanta</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
 	<name>secretsanta</name>
 	<description>Secret Santa Matchmaking</description>
-
-	<distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <!-- CHANGE HERE by your team Nexus server -->
-            <url>http://54.175.150.200:8081/repository/maven-releases/</url>
-        </repository>
-       </distributionManagement>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -59,24 +50,24 @@
 		</dependency>
 	</dependencies>
 
-	
-    <build>
+	<distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <url>http://43.204.217.64:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <url>http://43.204.217.64:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-    				<mainClass>com.notthebest.SecretsantaApplication</mainClass>
-				</configuration>
 			</plugin>
 		</plugins>
-	 </build>
-	<repositories>
-        <repository>
-            <id>maven-releases</id>
-            <name>maven-releases</name>
-            <url>http://54.175.150.200:8081/repository/maven-releases/</url>
-        </repository>
-    </repositories>
+	</build>
 
 </project>
