@@ -59,17 +59,16 @@
 		</dependency>
 	</dependencies>
 
-
 	
-           <build>
+    <build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+    				<mainClass>com.notthebest.SecretsantaApplication</mainClass>
+				</configuration>
 			</plugin>
-			<configuration>
-                           <mainClass>SecretsantaApplication</mainClass>
-                        </configuration>
 		</plugins>
 	 </build>
 	<repositories>
@@ -78,6 +77,6 @@
             <name>maven-releases</name>
             <url>http://54.175.150.200:8081/repository/maven-releases/</url>
         </repository>
-</repositories>
+    </repositories>
 
 </project>
